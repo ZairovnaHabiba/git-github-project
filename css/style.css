@@ -1,0 +1,75 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --bg-color:#23262c;
+  --roboto:'Roboto', sans-serif;
+  --text-color:#fff;
+  --text2-color:#828282;
+  --primaty-color:#cddf01;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+.container{
+  width: 1260px;
+}
+ul{
+  list-style-type: none;
+}
+html{
+  scroll-behavior: smooth;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+/* Header pattern */
+
+.site-header{
+  padding: 28px 0px;
+}
+.header__phone{
+  text-decoration: none;
+  color: var(--text-color);
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  display: inline-block;
+  margin-right: 30px;
+}
+.header__btn{
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  width: 22px;
+  height: 20px;
+  position: relative;
+  bottom: 3px;
+}
+.header__btn .bx{
+  color: var(--text-color);
+  font-size: 24px;
+  transition: 0.4s ease;
+}
+.header__btn:hover .bx{
+  color: var(--text2-color);
+}
